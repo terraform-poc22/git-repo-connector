@@ -56,7 +56,7 @@ resource "aws_codepipeline" "cicd_pipeline" {
 
     artifact_store {
         type="S3"
-        location = aws_s3_bucket.codepipeline_artifacts.id
+        location = aws_s3_bucket.codepipelinekjhsakdjhaskjdh.id
     }
 
     stage {
@@ -87,7 +87,7 @@ resource "aws_codepipeline" "cicd_pipeline" {
             owner = "AWS"
             input_artifacts = ["tf-code"]
             configuration = {
-                ProjectName = "tf-cicd-plan"
+                ProjectName = "tf-cicd-plan2"
             }
         }
     }
